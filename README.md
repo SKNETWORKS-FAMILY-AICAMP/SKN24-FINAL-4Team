@@ -89,3 +89,18 @@
 | **포모도로 집중 모드** | 25분 집중 / 휴식 전환 시 캐릭터 페르소나 메시지 |
 | **마을 커스터마이징** | 사과 토큰으로 캐릭터 집·마당 꾸미기 — 실천이 마을 성장으로 누적 |
 | **회고** | 일일 “잘한 점/못한 점” 기록, 캐릭터가 회고 유도 |
+
+---
+
+## 시스템 아키텍처
+![system_architecture](assets/readme/system_architecture.png) 
+[시스템 아키텍처](https://drive.google.com/file/d/15p49ZUIrJCmrSCy3LpU3FbjapZaMXdRc/view?usp=share_link)
+
+
+---
+
+## ERD
+![erd](assets/readme/erd.png)
+[ERD 및 테이블 명세서](https://drive.google.com/file/d/1PevvUKy8Mx8ltC6oueXnY-aVUMJEuqm8/view?usp=share_link)
+
+---

@@ -1,0 +1,17 @@
+{
+  "demo-user": [
+    {
+      "character_id": "f3443560-671e-496e-9ca9-b230801319e1",
+      "user_id": "demo-user",
+      "name": "시누",
+      "persona": "할로윈 유령 장난기 많지만 허당이다",
+      "personality": "장난치기를 좋아하는 유령으로, 늘 재미난 일을 꾸미지만 자주 실수를 저지르는 허당입니다. 긍정적이고 유쾌한 성격으로 주변을 웃음짓게 합니다.",
+      "speech_style": "가벼운 어투로, \"맞아 맞아!\"나 \"어이쿠!\" 같은 말을 자주 씁니다.",
+      "background": "옛날 몽글마을의 오래된 저택에서 태어난 유령입니다. 매일 밤 저택을 돌아다니며 사람들을 놀라게 하려 하지만, 그럴 때마다 엉뚱한 실수를 하며 좌충우돌 사건을 만듭니다. 친구들에게는 늘 유쾌한 웃음을 선사하는 존재입니다.",
+      "image_url": "/Users/jpaper/Documents/projects/mongle-village-submit/data/local_storage/mongle-village/characters/demo-user/2a43e5e9-358b-41ee-9d2b-80c095e8e347.png",
+      "source_image_url": "/Users/jpaper/Documents/projects/mongle-village-submit/data/local_storage/mongle-village/sources/demo-user/e0372f45-7e66-4c32-8086-7856d40dbad4.png",
+      "appearance_description": "이 캐릭터는 연한 녹색의 털로 덮인 둥근 모양의 인형이다. 얼굴 부분은 분홍색으로 되어 있으며, 보라색 원형의 눈과 작은 수염 모양의 입이 있다. 머리에는 삐죽한 선들이 장식되어 있다.",
+      "created_at": "2026-05-28T06:38:31.745528Z"
+    }
+  ]
+}
