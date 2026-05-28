@@ -1,0 +1,53 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A[/"Input
+    QuestGenerationInput
+    (todos, characters, remaining_daily_quota, shuffle_seed?)"/]
+
+    A --> CAP["pipeline.run
+    cap = min(len(todos), remaining_daily_quota)
+    cap<=0 또는 characters 비어있음 → 즉시 빈 결과 반환"]
+
+    CAP --> INIT["CharacterPool 생성
+    seed로 결정성, 풀 비면 자동 셔플 리셋"]
+
+    INIT --> LOOP["for todo in todos[:cap]"]
+
+    LOOP --> SELECT["pool.next()
+    풀 비면 _refill() → pop"]
+
+    SELECT --> RUNNER{{"LLMRunner.generate
+    LLMPort.generate_quest(character=...)
+    재시도 max_retries=2 (총 3시도)"}}
+
+    RUNNER -- 성공 --> ACC["generated 누적
+    GeneratedQuest(character_id, todo_id, quest_text<=80자)"]
+
+    RUNNER -- 모두 실패 --> SKIP["skipped 누적
+    SkippedItem(todo_id, reason='llm_failure')"]
+
+    ACC --> NEXT{"loop 끝?"}
+    SKIP --> NEXT
+    NEXT -- 아니오 --> LOOP
+    NEXT -- 예 --> OUT[/"Output
+    QuestDistributionResult(generated, skipped)"/]
+
+    classDef input fill:#fef9c3,stroke:#ca8a04,color:#713f12
+    classDef process fill:#ffffff,stroke:#6b7280,color:#111827
+    classDef ai fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+    classDef gate fill:#fed7aa,stroke:#ea580c,color:#7c2d12
+    classDef skip fill:#fecaca,stroke:#dc2626,color:#7f1d1d
+
+    A:::input
+    OUT:::input
+    CAP:::process
+    INIT:::process
+    LOOP:::process
+    SELECT:::process
+    RUNNER:::ai
+    ACC:::process
+    SKIP:::skip
+    NEXT:::gate
