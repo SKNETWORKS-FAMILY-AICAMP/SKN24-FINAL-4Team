@@ -9,7 +9,22 @@
 
 ---
 
-## 팀원
+## 목차
+
+1. [팀 구성](#팀-구성)
+1. [개요](#개요)
+2. [주요 고객](#주요-고객)
+3. [주요 기능](#주요-기능)
+4. [기술 스택](#기술-스택)
+5. [시스템 아키텍처](#시스템-아키텍처)
+6. [ERD](#ERD)
+7. [활용 데이터](#활용-데이터)
+9. [테스트 계획 및 결과](#테스트-계획-및-결과)
+10. [향후 발전 방향](#향후-발전-방향)
+
+---
+
+## 팀 구성
 
 | 이름   | github                        |
 | ------ | ----------------------------- |
@@ -21,27 +36,11 @@
 
 ---
 
-## 목차
-
-1. [개요](#개요)
-2. [주요 기능](#주요-기능)
-3. [시스템 아키텍처](#시스템-아키텍처)
-4. [ERD](#ERD)
-5. [활용 데이터](#활용-데이터)
-6. [모델 선정](#모델-선정)
-7. [파인튜닝 및 평가](#파인튜닝-및-평가)
-6. [플레이 영상](#플레이-영)
-6. [비즈니스 모델(BM)](#비즈니스-모델(BM))
-6. [기대 효과](#기대-효과)
-6. [향후 발전 방향](#향후-발전-방향)
-
----
-
 ## 개요
 
 ### 배경 및 시장 현황
 
-최근 MZ세대를 중심으로 건강 관리, 자기계발, 생활 습관 형성 등 일상 속 자기관리에 대한 관심이 높아지고 있다. 실제로 루틴 형성 앱을 이용하는 비율은 **21.3%**로 나타났으며, 정해진 목표를 반복적으로 실천하고 자신의 생활을 체계적으로 관리하려는 수요가 지속적으로 증가하고 있다.
+최근 MZ세대를 중심으로 건강 관리, 자기계발, 생활 습관 형성 등 일상 속 자기관리에 대한 관심이 높아지고 있다. 실제로 루틴 형성 앱을 이용하는 비율은 21.3%로 나타났으며, 정해진 목표를 반복적으로 실천하고 자신의 생활을 체계적으로 관리하려는 수요가 지속적으로 증가하고 있다.
 
 <br>
 
@@ -71,7 +70,7 @@
 | ----------------------------------------------------------- | --------------------------------------------- |
 | ![개요_자기개발_현황](assets/readme/개요_자기개발_현황.png) | ![개요_이탈률](assets/readme/개요_이탈률.png) |
 
-기존 생산성 앱의 낮은 이용 지속률 또한 중요한 문제이다. 생산성 앱의 초기 리텐션율은 **32.86%**이지만, 30일 이후에는 **9.63%**까지 급격히 감소한다. 많은 서비스가 할 일을 기록하고 완료 여부를 확인하는 기능에 집중하고 있어, 사용자가 반복적으로 서비스를 방문하고 목표를 이어가도록 만드는 정서적·외적 동기 부여가 충분하지 않기 때문이다.
+기존 생산성 앱의 낮은 이용 지속률 또한 중요한 문제이다. 생산성 앱의 초기 리텐션율은 32.86%이지만, 30일 이후에는 9.63%까지 급격히 감소한다. 많은 서비스가 할 일을 기록하고 완료 여부를 확인하는 기능에 집중하고 있어, 사용자가 반복적으로 서비스를 방문하고 목표를 이어가도록 만드는 정서적·외적 동기 부여가 충분하지 않기 때문이다.
 
 따라서 단순히 일정을 기록하는 기능을 넘어, 사용자의 막연한 목표를 구체적인 행동으로 변환하고 실천 과정에서 지속적인 보상과 피드백을 제공하는 새로운 형태의 루틴 관리 서비스가 필요하다.
 
@@ -120,9 +119,9 @@
 - 사용자의 애착인형을 기반으로 생성된 AI 캐릭터와의 상호작용을 통해 **정서적 유대감과 몰입감을 형성한다.**
 - 계획 수립, 집중, 완료, 보상, 회고로 이어지는 선순환 구조를 통해 **일상 속 루틴 형성을 지원한다.**
 
-<br>
+---
 
-### 주요 고객
+## 주요 고객
 
 몽글마을의 주요 고객은 자기관리와 자기계발에 대한 의지는 있지만, 구체적인 계획을 세우거나 이를 장기간 지속하는 데 어려움을 겪는 2030 사용자이다.
 
@@ -142,8 +141,24 @@
 | **퀘스트 자동 연결** | TODO에 캐릭터 1:1 매핑, 완료 시 캐릭터 페르소나 반응 제공 |
 | **SNS 피드** | 퀘스트 완료 시 캐릭터 페르소나를 반영한 글 + 이미지 자동 게시 |
 | **포모도로 집중 모드** | 25분 집중 / 5분 휴식 전환 시 캐릭터 페르소나 메시지 |
-| **마을 커스터마이징** | 사과 토큰으로 캐릭터 집 꾸미기 |
 | **회고** | 일일 “잘한 점/아쉬운 점” 기록, 캐릭터가 회고 유도 |
+
+---
+
+## 기술 스택
+
+| 분류 | 기술/도구 |
+|---|---|
+| AI / Agent Framework | ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white) |
+| LLM / Model Serving | ![Qwen](https://img.shields.io/badge/Qwen2.5-111827?style=for-the-badge&logo=alibabacloud&logoColor=white) ![vLLM](https://img.shields.io/badge/vLLM-00A3FF?style=for-the-badge&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black) |
+| Image AI | ![Diffusers](https://img.shields.io/badge/Diffusers-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white) ![LoRA](https://img.shields.io/badge/LoRA-7C3AED?style=for-the-badge&logoColor=white) |
+| Backend | ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) |
+| FrontEnd | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Phaser](https://img.shields.io/badge/Phaser-2E86AB?style=for-the-badge&logoColor=white) |
+| Infrastructure / Deployment | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![RunPod](https://img.shields.io/badge/RunPod-673AB7?style=for-the-badge&logoColor=white) ![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white) |
+| Storage | ![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white) |
+| DB | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) |
+| Language / Environment | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| Collaboration Tool | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white) |
 
 ---
 
@@ -162,27 +177,58 @@
 
 ## 활용 데이터
 
+몽글마을의 AI 캐릭터가 설정된 페르소나와 말투를 유지하면서 **퀘스트, 피드 게시글, 댓글·답글**을 생성할 수 있도록 한국어 롤플레잉 대화 데이터와 한국어 문체 합성 데이터를 활용하였다.
+
+### 1. 데이터 출처
+
+| 데이터셋                                                                                                    |               원본 규모 | 활용 목적                                 |
+| ------------------------------------------------------------------------------------------------------- | ------------------: | ------------------------------------- |
+| [Korean Role Playing](https://huggingface.co/datasets/huggingface-KREW/korean-role-playing)             |      35,302개 멀티턴 대화 | 캐릭터의 페르소나, 감정 표현 및 자연스러운 한국어 대화 능력 학습 |
+| [Korean Writing Style Instruct](https://huggingface.co/datasets/coastral/korean-writing-style-instruct) | 약 29,000개 문체 변환 데이터 | 캐릭터 성격에 따른 다양한 한국어 말투와 문체 학습          |
+
+한국어 롤플레잉 데이터셋은 연인 관계 기반 대화, 실제 커플 일상 대화, 일반 롤플레잉, EXA 캐릭터 역할극 등 4개의 서브셋으로 구성되어 있다.
+
+한국어 문체 합성 데이터셋은 존댓말, 반말, 구어체, 문어체, 고어체 등 다양한 한국어 표현을 포함하며, 캐릭터별 말투 스타일을 학습하는 데 활용하였다.
+
+### 2. 데이터 활용 목적
+
+| 태스크       | 활용 내용                           |
+| --------- | ------------------------------- |
+| 퀘스트 생성    | 캐릭터의 성격과 페르소나가 반영된 퀘스트 문구 생성    |
+| 피드 게시글 생성 | 사용자가 완료한 일을 캐릭터의 말투로 표현한 게시글 생성 |
+| 댓글·답글 생성  | 게시글 내용에 어울리는 캐릭터 말투의 댓글과 답글 생성  |
 
 ---
 
-## 모델 선정
+## 테스트 계획 및 결과
+[테스트 계획 및 결과](https://drive.google.com/file/d/16Zkb4-XlJT8G2_D4bAImJMAZZeY1ag3w/view?usp=share_link)
 
 ---
 
-## 파인튜닝 및 평가
+## 향후 발전 방향
 
----
+### 1. TODO 수행 이력 기반 개인화 플래너 고도화
 
-## 플레이 영상
+현재는 사용자가 입력한 목표, 마감일, 가용 시간, 선호도, 제약 조건을 바탕으로 계획을 생성한다.  
+향후에는 사용자의 실제 완료 이력과 미완료 패턴을 함께 반영하여 더 현실적인 계획을 생성하도록 개선할 예정이다.
 
----
+- 자주 미루는 요일/시간대 분석
+- 평균 TODO 완료 소요 시간 추정
+- 반복 목표에 대한 자동 일정 추천
+- 사용자의 수행률에 따른 계획 난이도 자동 조절
 
-## 비즈니스 모델(BM)
+### 2. 사과 토큰 기반 보상 및 집 커스터마이징 기능 추가
 
----
+TODO 완료, 회고 작성 등을 통해 취득한 `사과 토큰`을 활용해 캐릭터의 집과 마을을 꾸밀 수 있는 커스터마이징 기능을 추가할 예정이다.
 
-## 기대 효과
+- 캐릭터별 집 및 마을 꾸미기 기능 추가
+- 커스터마이징 결과를 피드/프로필에 노출
 
----
+### 3. 캐릭터 성장 시스템 도입
 
-## 향후 발전 방
+현재 캐릭터는 사용자의 TODO 완료 여부에 따라 퀘스트, 피드, 댓글, 메시지를 생성한다.  
+향후에는 캐릭터가 사용자의 활동에 따라 성장하거나 변화하는 구조를 추가할 예정이다.
+
+- TODO 완료 횟수에 따른 캐릭터 레벨업
+- 캐릭터별 친밀도/경험치 시스템
+- 장기 목표 달성 시 특별 퀘스트 또는 보상 제공
