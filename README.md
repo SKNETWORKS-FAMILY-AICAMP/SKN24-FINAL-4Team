@@ -150,16 +150,16 @@
 
 | 분류 | 기술/도구 |
 |---|---|
-| AI / Agent Framework | ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white) |
-| LLM / Model Serving | ![Qwen](https://img.shields.io/badge/Qwen2.5-111827?style=for-the-badge&logo=alibabacloud&logoColor=white) ![vLLM](https://img.shields.io/badge/vLLM-00A3FF?style=for-the-badge&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black) |
-| Image AI | ![Diffusers](https://img.shields.io/badge/Diffusers-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white) ![LoRA](https://img.shields.io/badge/LoRA-7C3AED?style=for-the-badge&logoColor=white) |
+| AI Agent / Orchestration | ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) |
+| LLM / Model Serving | ![Qwen2.5-7B](https://img.shields.io/badge/Qwen2.5--7B-111827?style=for-the-badge\&logo=alibabacloud\&logoColor=white) ![EXAONE 3.5-7.8B-Instruct](https://img.shields.io/badge/EXAONE_3.5--7.8B--Instruct-111827?style=for-the-badge\&logoColor=white) ![vLLM](https://img.shields.io/badge/vLLM-00A3FF?style=for-the-badge&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black) |
+| Image Generation | ![Diffusers](https://img.shields.io/badge/Diffusers-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white) ![LoRA](https://img.shields.io/badge/LoRA-7C3AED?style=for-the-badge&logoColor=white) |
 | Backend | ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) |
-| FrontEnd | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Phaser](https://img.shields.io/badge/Phaser-2E86AB?style=for-the-badge&logoColor=white) |
+| Frontend | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Phaser](https://img.shields.io/badge/Phaser-2E86AB?style=for-the-badge&logoColor=white) |
 | Infrastructure / Deployment | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![RunPod](https://img.shields.io/badge/RunPod-673AB7?style=for-the-badge&logoColor=white) ![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white) |
-| Storage | ![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white) |
+| Storage | ![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white) ![Amazon RDS](https://img.shields.io/badge/Amazon_RDS-527FFF?style=for-the-badge\&logo=amazonrds\&logoColor=white)|
 | DB | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) |
-| Language / Environment | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
-| Collaboration Tool | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white) |
+| Language | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) |
+| Collaboration | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white) |
 
 ---
 
